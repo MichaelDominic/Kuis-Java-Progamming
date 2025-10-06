@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.gudang.controller.SupplierController">
+    <VBox spacing="10">
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+
+        <TableView fx:id="tableSupplier">
+            <columns>
+                <TableColumn fx:id="colKode" text="Kode"/>
+                <TableColumn fx:id="colNamaa" text="Nama"/>
+                <TableColumn fx:id="colAlamat" text="Alamat"/>
+                <TableColumn fx:id="colTel" text="Telepon"/>
+            </columns>
+        </TableView>
+
+        <HBox spacing="10">
+            <TextField fx:id="txtKode" promptText="Kode Supplier"/>
+            <TextField fx:id="txtNama" promptText="Nama Supplier"/>
+            <TextField fx:id="txtAlamat" promptText="Alamat"/>
+            <TextField fx:id="txtTelepon" promptText="Telepon"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Button text="Tambah" onAction="#tambahSupplier"/>
+            <Button text="Edit" onAction="#editSupplier"/>
+            <Button text="Hapus" onAction="#hapusSupplier"/>
+        </HBox>
+    </VBox>
+</AnchorPane>

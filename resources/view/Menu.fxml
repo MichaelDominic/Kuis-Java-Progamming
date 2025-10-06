@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx/25"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.gudang.controller.MenuController"
-      prefHeight="200.0" prefWidth="300.0">
+<VBox prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gudang.controller.MenuController">
    <children>
       <Label text="Menu Utama" />
-      <Button onAction="#openBarang" text="Manajemen Barang" />
-      <Button onAction="#openSupplier" text="Manajemen Supplier" />
+      <Button onAction="#openBarang" prefHeight="26.0" prefWidth="146.0" text="Manajemen Barang" />
+      <Button onAction="#openSupplier" prefHeight="26.0" prefWidth="146.0" text="Manajemen Supplier" />
+      <Button mnemonicParsing="false" onAction="#openCustomer" prefHeight="26.0" prefWidth="148.0" text="Manajemen Customer" />
    </children>
 </VBox>

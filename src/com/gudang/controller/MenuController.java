@@ -20,6 +20,16 @@ public class MenuController {
     }
 
     @FXML
+    void openCustomer(ActionEvent event) throws Exception {
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Customer.fxml"));
+        Scene scene = new Scene(loader.load());
+        stage.setScene(scene);
+        stage.setTitle("Manajemen Customer");
+        stage.show();
+    }
+
+    @FXML
     void openSupplier(ActionEvent event) throws Exception {
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Supplier.fxml"));
